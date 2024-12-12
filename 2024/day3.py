@@ -13,7 +13,7 @@ def extract_and_multiply(s):
 
 # Example usage
 corrupted_memory = "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))"
-with open('/Users/francis.joseph/dev/adventofcode/day3_1.txt', 'r') as file:
+with open('/Users/francis.joseph/dev/adventofcode/day3.txt', 'r') as file:
     corrupted_memory = file.read()
     result = extract_and_multiply(corrupted_memory)
     print(result)  # Output should be 161
@@ -38,7 +38,7 @@ def extract_and_multiply_with_conditions(s):
     return total
 
 # Example usage
-with open('/Users/francis.joseph/dev/adventofcode/day3_1.txt', 'r') as file:
+with open('/Users/francis.joseph/dev/adventofcode/day3.txt', 'r') as file:
     corrupted_memory = file.read()
     result = extract_and_multiply_with_conditions(corrupted_memory)
     print(result)

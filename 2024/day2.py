@@ -15,7 +15,7 @@ data = """7 6 4 2 1
 1 3 2 4 5
 8 6 4 4 1
 1 3 6 7 9"""
-with open('/Users/francis.joseph/dev/adventofcode/day2_1.txt', 'r') as file:
+with open('/Users/francis.joseph/dev/adventofcode/day2.txt', 'r') as file:
     data = file.read()
     print(count_safe_reports(data))  # Output: 2
 
@@ -34,6 +34,6 @@ def count_safe_reports_with_dampener(data):
     return sum(is_safe_with_dampener(report) for report in reports)
 
 # Example usage:
-with open('/Users/francis.joseph/dev/adventofcode/day2_1.txt', 'r') as file:
+with open('/Users/francis.joseph/dev/adventofcode/day2.txt', 'r') as file:
     data = file.read()
     print(count_safe_reports_with_dampener(data))  # Output: 4
