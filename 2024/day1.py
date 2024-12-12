@@ -15,7 +15,7 @@ def calculate_total_distance(left_list, right_list):
 # Example usage
 left_list = [3, 4, 2, 1, 3, 3]
 right_list = [4, 3, 5, 3, 9, 3]
-with open('/Users/francis.joseph/dev/adventofcode/day1.txt', 'r') as file:
+with open('/Users/francis.joseph/dev/adventofcode/2024/day1.txt', 'r') as file:
     lines = file.readlines()
     left_list = [int(line.strip().split()[0]) for line in lines]
     right_list = [int(line.strip().split()[1]) for line in lines]

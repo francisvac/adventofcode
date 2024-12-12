@@ -40,7 +40,7 @@ def count_x_mas(grid):
     def search_x_mas(x, y):
         patterns = [
             [(0, 0), (0, 2), (1, 1), (2, 0), (2, 2)],  # Normal X-MAS
-            [(2, 2), (0, 2), (1, 1), (0, 0), (2, 0)],  # Rotated 180 degrees
+            [(2, 2), (2, 0), (1, 1), (0, 0), (0, 2)],  # Rotated 180 degrees
             [(0, 0), (2, 0), (1, 1), (2, 2), (0, 2)],  # Rotated 90 degrees clockwise
             [(0, 2), (2, 2), (1, 1), (0, 0), (2, 0)]   # Rotated 90 degrees counterclockwise
         ]
@@ -60,6 +60,6 @@ def count_x_mas(grid):
     return count
 
 # Example usage
-# with open('/Users/francis.joseph/dev/adventofcode/day4_1.txt') as f:
-#     grid = [line.strip() for line in f.readlines()]
-print(count_x_mas(grid))  # Output: 9
+with open('/Users/francis.joseph/dev/adventofcode/2024/day4.txt') as f:
+    grid = [line.strip() for line in f.readlines()]
+    print(count_x_mas(grid))  # Output: 9
